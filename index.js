@@ -19,14 +19,14 @@ app.use(cors());
 //         console.log('connect to DB')
 //     }
 // )
-mongoose.connect(process.env.DB_CONNECT, {
-        useNewUrlParser: true, 
-        useUnifiedTopology: true
-}).then(() => {
-    console.log('MongoDB connected!!');
-}).catch(err => {
-    console.log('Failed to connect to MongoDB', err);
-});
+// mongoose.connect(process.env.DB_CONNECT, {
+//         useNewUrlParser: true, 
+//         useUnifiedTopology: true
+// }).then(() => {
+//     console.log('MongoDB connected!!');
+// }).catch(err => {
+//     console.log('Failed to connect to MongoDB', err);
+// });
 
 const PORT = process.env.PORT || 3005
 
